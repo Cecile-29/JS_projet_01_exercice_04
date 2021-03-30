@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="vieport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>JS/projet_01/exercice_04</title>
+  </head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <body>
+    <div class="container">
+      <h1>Exercice 4</h1>
+      <p>Créez trois champs pour entrer un nom, prénom et une ville.</p>
+      <p>Un bouton doit permettre de les afficher dans une modale.</p>
+      <div class="row col-12 d-flex justify-content-center">
+        <div>
+          <form class="" action="index.html" method="post">
+            <p><input type="text" id="nom" value="" required></p>
+            <p><input type="text" id="prénom" value="" required></p>
+            <p><input type="text" id="ville" value="" required></p>
+            <p><button class="btn btn-primary" onclick="displayInput()">ok !</button></p></div>
+          </form>
+        </div>
+    </div>
+    <script type="text/javascript">
+    //
+      function displayInput(){
+        var inputName = document.getElementById('nom').value;
+        var inputUserName = document.getElementById('prénom').value;
+        var inputCity = document.getElementById('ville').value;
+        if(isNaN(inputName) && isNaN(inputUserName) && isNaN(inputCity)){
+          alert('Votre nom est :' + inputName + '\n' + 'Votre Prénom est :' + inputUserName + '\n' +
+          'Votre ville est :' + inputCity);
+        //if(isNaN(inputName) && (isNaN(inputUserName)) && (isNaN(input))
+        }else{
+          alert('Veuillez remplir les champs');
+
+        }
+      }
+    </script>
+  </body>
+</html>
